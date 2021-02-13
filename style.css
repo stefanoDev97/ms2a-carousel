@@ -1,0 +1,102 @@
+
+.sliders{
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+}
+.sliders2{
+    position: relative;
+}
+.sliders .slider{
+    height: 200px;
+    margin: 20px;
+    text-align: center;
+    background-color: rgb(8, 4, 24);
+    color: #ddd;
+    line-height: 200px;
+    font-size: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    /* opacity: 0; */
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+/* .sliders .active .slider{
+    opacity:1
+} */
+.carousel{
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel__container{
+    height: 100%;
+    overflow: hidden;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+}
+
+.carousel__child{
+    float: left;
+}
+.carousel__btn{
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.carousel__btn--next{
+    left: auto;
+    right: 2px;
+}
+.carousel__dotts{
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    /* bottom: 3rem;
+    left: 50%; */
+    /* transform: translateX(-50%); */
+    list-style-type: none;
+}
+.carousel__list{
+    border: 2px solid rgb(61, 61, 61);
+    padding: .2rem;
+    border-radius: 50%;
+    margin: .2rem;
+    cursor: pointer;
+}
+.carousel__list:hover{
+    background-color: black;
+}
+.carousel__list--active{
+    border-color: black;
+    background-color: black;
+}
+.carousel__btn--prev svg {
+	transform: rotateY(180deg);
+}
+@media(max-width:500px){
+    .carousel__dotts{
+        display: none;
+    }
+}
